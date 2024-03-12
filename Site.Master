@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="choosing_a_pet.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head runat="server">
+
+
+<link rel="stylesheet" href="nyyy.css">
+
+
+<%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />--%>
+
+<%--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">--%>
+   
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <link rel="stylesheet" href="nyyy.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+
+    <a class="main" runat="server" href="~/">fp</a>
+    <a class="main" runat="server" href="veterinary_clinic.aspx">Ветеринарные клиники</a>
+    <a class="main" runat="server" href="shelters.aspx">Приюты</a>
+    <a class="main" runat="server" href="nutrition_calculation.aspx">Расчет питания для питомца</a>
+    <a class="main" runat="server" href="help_find_home.aspx">Помочь найти дом</a>
+    <a class="main" runat="server" href="ads.aspx">Объявления</a>
+
+        <div class="main">
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <hr />
+
+            <footer>
+                <a class="main" runat="server" href="adm.aspx">&copy; <%: DateTime.Now.Year %> - Эльвина Ахметшина</a>
+             
+            </footer>
+        </div>
+
+    
+</body>
+</html>

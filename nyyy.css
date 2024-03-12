@@ -1,0 +1,48 @@
+﻿body {
+    background-color: white;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+}
+
+.body {
+    background-color: white;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+}
+
+.main {
+    background-color: white;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    position: center;
+    height: fit-content;
+}
+
+.panel {
+    background-color: white;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+    position: center;
+    height: fit-content;
+ 
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}

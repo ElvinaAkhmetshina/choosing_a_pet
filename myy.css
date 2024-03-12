@@ -1,0 +1,34 @@
+﻿body {
+    background-color: white;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+}
+
+.body {
+    background-color: white;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+}
+
+.main {
+    background-color: white;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+}
+
+.panel {
+    position: center;
+    height: fit-content;
+    width: 1000px;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
