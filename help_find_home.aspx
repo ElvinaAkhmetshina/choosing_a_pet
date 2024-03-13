@@ -12,19 +12,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-<%--      
-             <asp:Panel ID="Contents" runat="server" cssClass="panel">
-            <h2>Содержание:</h2>
-            
-            <a href="#Donate">Пожертвовать</a>
-            <a href="#HelpInSearching">Хочу помочь в поисках потерявшейся собаки</a> 
-            <a href="#HelpToShelter">Хочу помочь приюту</a> 
-            <a href="#FoundLostDog">Нашёл потерявшуюся собаку</a>  
-            <a href="#LostDog">Потерял собаку</a> 
-            <a href="#TemporaryPetAdoption">Хочу взять на передержку</a>  
-            <a href="#NeedsTemporaryPetAdoption">Возьмите на передержку</a>  
-            
-        </asp:Panel>--%>
             <asp:Panel ID="Content" runat="server">
                 <div class="main" id="Donate">
                 <h2>Пожертвовать</h2>
@@ -127,36 +114,6 @@
  
 </div>
                 </div>
-                <%-- <div class="main" id="HelpInSearching">
-                <h2>Хочу помочь в поисках потерявшейся собаки.</h2>
-                <p>С помощью нашей платформы вы можете оставить объявление о желании помочь в поисках потерявшейся собаки.</p>
-                     <asp:Label ID="LNameHelpSearch" runat="server" Text="Фамилия Имя Отчество"></asp:Label>
-                     <asp:TextBox ID="TNameHelpSearch" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTownHelpSearch" runat="server" Text="Город"></asp:Label>
-                     <asp:TextBox ID="TTownHelpSearch" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTelHelpSearch" runat="server" Text="Номер Телефона"></asp:Label>
-                     <asp:TextBox ID="TTelHelpSearch" runat="server"></asp:TextBox>
-                     <asp:Label ID="LAddrHelpSearch" runat="server" Text="Адрес/район"></asp:Label>
-                     <asp:TextBox ID="TAddrHelpSearch" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTimeHelpSearch" runat="server" Text="Когда удобно помочь"></asp:Label>
-                     <asp:TextBox ID="TTimeHelpSearch" runat="server"></asp:TextBox>
-                     <asp:Button ID="ButtonSearching" runat="server" Text="Оставить заявку" OnClick="ButtonSearching_Click"/>
-                     </div>
-                 <div class="main" id="HelpToShelter">
-                <h2>Хочу помочь приюту</h2>
-                <p>С помощью нашей платформы вы можете оставить объявление о желании помочь приюту в качестве волонтера.</p>
-                     <asp:Label ID="LNameHelpShelter" runat="server" Text="Фамилия Имя Отчество"></asp:Label>
-                     <asp:TextBox ID="TNameHelpShelter" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTownHelpShelter" runat="server" Text="Город"></asp:Label>
-                     <asp:TextBox ID="TTownHelpShelter" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTelHelpShelter" runat="server" Text="Номер Телефона"></asp:Label>
-                     <asp:TextBox ID="TTelHelpShelter" runat="server"></asp:TextBox>
-                     <asp:Label ID="LAddrHelpShelter" runat="server" Text="Адрес/район"></asp:Label>
-                     <asp:TextBox ID="TAddrHelpShelter" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTimeHelpShelter" runat="server" Text="Когда удобно помочь"></asp:Label>
-                     <asp:TextBox ID="TTimeHelpShelter" runat="server"></asp:TextBox>
-                       <asp:Button ID="ButtonShelter" runat="server" Text="Оставить заявку" OnClick="ButtonShelter_Click"/>
-           </div>--%>
 
                 <div class="main" id="FoundLostDog">
                 <h2>Хочу оставить объявление</h2>
@@ -182,55 +139,7 @@
                       <asp:Button ID="ButtonFound" runat="server" Text="Оставить заявку" OnClick="ButtonFound_Click"/>
            </div>
 
-                <%--<div class="main" id="LostDog">
-                <h2>Потерял собаку</h2>
-                <p>С помощью нашей платформы вы можете оставить объявление о потере собаки и найти волонтеров для помощи в её поисках.</p>
-                     <asp:Label ID="LNameFind" runat="server" Text="Фамилия Имя Отчество"></asp:Label>
-                     <asp:TextBox ID="TNameFind" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTownFind" runat="server" Text="Город"></asp:Label>
-                     <asp:TextBox ID="TTownFind" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTelFind" runat="server" Text="Номер Телефона"></asp:Label>
-                     <asp:TextBox ID="TTelFind" runat="server"></asp:TextBox>
-                     <asp:Label ID="LAddrFind" runat="server" Text="Адрес/район"></asp:Label>
-                     <asp:TextBox ID="TAddrFind" runat="server"></asp:TextBox>
-                     <asp:Label ID="LCommentFind" runat="server" Text="Описание потерявшейся собаки"></asp:Label>
-                     <asp:TextBox ID="TCommentFind" runat="server"></asp:TextBox>
-                    <asp:Label ID="LLostDogPhoto" runat="server" Text="Сюда вы можете прикрепить фото потерявшейся собаки."></asp:Label>
-                    <input id="ILostDog" type="file" runat="server" name="ILostDog"/>
-                      <asp:Button ID="ButtonLost" runat="server" Text="Оставить заявку" OnClick="ButtonLost_Click"/>
-                </div>
-           <div class="main" id="TemporaryPetAdoption">
-                <h2>Хочу взять на передержку</h2>
-                <p>С помощью нашей платформы вы можете оставить объявление о желании взять собаку на передержку.</p>
-                        <asp:Label ID="LNameAdopt" runat="server" Text="Фамилия Имя Отчество"></asp:Label>
-                     <asp:TextBox ID="TNameAdopt" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTownAdopt" runat="server" Text="Город"></asp:Label>
-                     <asp:TextBox ID="TTownAdopt" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTelAdopt" runat="server" Text="Номер Телефона"></asp:Label>
-                     <asp:TextBox ID="TTelAdopt" runat="server"></asp:TextBox>
-                     <asp:Label ID="LAddrAdopt" runat="server" Text="Адрес/район"></asp:Label>
-                     <asp:TextBox ID="TAddrAdopt" runat="server"></asp:TextBox>
-                     <asp:Label ID="LCommentAdopt" runat="server" Text="Комментарий"></asp:Label>
-                     <asp:TextBox ID="TCommentAdopt" runat="server"></asp:TextBox>
-                 <asp:Button ID="ButtonAdopt" runat="server" Text="Оставить заявку" OnClick="ButtonAdopt_Click"/>
-           </div>
-                 <div class="main" id="NeedsTemporaryPetAdoption">
-                <h2>Возьмите на передержку</h2>
-                <p>С помощью нашей платформы вы можете оставить объявлении о необходимости отдать собаку на передержку.</p>
-           <asp:Label ID="LNameNeedsAdopt" runat="server" Text="Фамилия Имя Отчество"></asp:Label>
-                     <asp:TextBox ID="TNameNeedsAdopt" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTownNeedsAdopt" runat="server" Text="Город"></asp:Label>
-                     <asp:TextBox ID="TTownNeedsAdopt" runat="server"></asp:TextBox>
-                     <asp:Label ID="LTelNeedsAdopt" runat="server" Text="Номер Телефона"></asp:Label>
-                     <asp:TextBox ID="TTelNeedsAdopt" runat="server"></asp:TextBox>
-                     <asp:Label ID="LAddrNeedsAdopt" runat="server" Text="Адрес/район"></asp:Label>
-                     <asp:TextBox ID="TAddrNeedsAdopt" runat="server"></asp:TextBox>
-                     <asp:Label ID="LCommentNeedsAdopt" runat="server" Text="Описание собаки"></asp:Label>
-                     <asp:TextBox ID="TCommentNeedsAdopt" runat="server"></asp:TextBox>
-                      <asp:Label ID="LNeedsAdopt" runat="server" Text="Сюда вы можете прикрепить фото собаки."></asp:Label>
-                    <input id="INeedsAdopt" type="file" runat="server" name="INeedsAdopt"/>
-                       <asp:Button ID="ButtonNeedsAdopt" runat="server" Text="Оставить заявку" OnClick="ButtonNeedsAdopt_Click"/>
-                 </div>--%>
+              
                 
             </asp:Panel>
 

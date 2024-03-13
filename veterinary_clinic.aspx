@@ -25,32 +25,3 @@
      </div>
  </form>
 </asp:Content>
-
-<%--<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-        <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form2" runat="server">
-        <div>
-            <h1>Ветклиники</h1>
-            <asp:Panel ID="Panel1" runat="server" >
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="true" AutoGenerateColumns="false">
-                    <Columns>
-                    <asp:BoundField ItemStyle-Width="150px" DataField="id" HeaderText="Customer ID" Visible="false"/>
-                    <asp:BoundField ItemStyle-Width="150px" DataField="name" HeaderText="Название" />
-                    <asp:BoundField ItemStyle-Width="150px" DataField="addres" HeaderText="Адрес" />
-                    <asp:BoundField ItemStyle-Width="150px" DataField="reiting" HeaderText="Рейтинг" />
-                    <asp:BoundField ItemStyle-Width="150px" DataField="added" HeaderText="Country" Visible="false"/>
-                    </Columns>
-                </asp:GridView> 
-                
-                <asp:Label ID="Label1" runat="server" ></asp:Label>
-            </asp:Panel>
-            
-        </div>
-    </form>
-</body>
-</html>--%>
