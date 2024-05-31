@@ -11,7 +11,7 @@ namespace choosing_a_pet
 {
     public partial class shelters : System.Web.UI.Page
     {
-        public static string connection_string = @"Data Source=LAPTOP-NQ4AHNK7;Initial Catalog=choosing_a_pet;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public static string connection_string = @"Data Source=LAPTOP;Initial Catalog=choosing_a_pet;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         private void GetData()
         {
             using (SqlConnection new_connection = new SqlConnection(connection_string))

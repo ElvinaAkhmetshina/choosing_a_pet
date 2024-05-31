@@ -17,6 +17,13 @@ namespace choosing_a_pet
         //int id;
         //int tel;
 
+
+
+
+
+        //test 
+        //test
+
         private string GetIdFromName(int id, string tel)
         {
             string image_url = id +tel +".jpg";

@@ -19,14 +19,7 @@ namespace choosing_a_pet
 
             }
             Slides.ImageUrl = "img/dog" + 2 + ".jpg";
-            //int date_time_start = DateTime.Now.Second;
-            //int date_time_end = date_time_start + 30;
-            //while (date_time_start <= date_time_end)
-            //{
-            //    date_time_end--;
-
-            //}
-            //Slides.ImageUrl = "img/dog" + i + ".jpg";
+          
         }
 
 

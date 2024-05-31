@@ -89,28 +89,6 @@ namespace choosing_a_pet
        
 
 
-        //protected void ButtonSearching_Click(object sender, EventArgs e)
-        //{
-        //    table_name = "help_in_searching";
-        //    user_name = TNameHelpSearch.Text;
-        //    user_town = TTownHelpSearch.Text;
-        //    user_tel = TTelHelpSearch.Text;
-        //    user_addr = TAddrHelpSearch.Text;
-        //    user_comment = TTimeHelpSearch.Text;
-        //    DataBaseNotice(table_name, user_name, user_town, user_tel, user_addr, user_comment, "user");
-        //}
-
-        //protected void ButtonShelter_Click(object sender, EventArgs e)
-        //{
-        //    table_name = "help_to_shelter";
-        //    user_name = TNameHelpShelter.Text;
-        //    user_town = TTownHelpShelter.Text;
-        //    user_tel = TTelHelpShelter.Text;
-        //    user_addr = TAddrHelpShelter.Text;
-        //    user_comment = TTimeHelpShelter.Text;
-        //    DataBaseNotice(table_name, user_name, user_town, user_tel, user_addr, user_comment, "user");
-        //}
-
         protected void ButtonFound_Click(object sender, EventArgs e)
         {
             table_name = "users_adds";
@@ -124,7 +102,7 @@ namespace choosing_a_pet
             string strFileName1, strFileName2;
             string strFilePath;
             string strFolder;
-            strFolder = "C:\\Users\\Elvina\\Desktop\\Курсач\\choosing_a_pet\\";
+            strFolder = "C:\\choosing_a_pet\\";
             // Retrieve the name of the file that is posted.
             strFileName1 = user_id;
             strFileName2 = user_tel;
@@ -145,77 +123,6 @@ namespace choosing_a_pet
 
         }
 
-        //protected void ButtonLost_Click(object sender, EventArgs e)
-        //{
-        //    table_name = "lost_dog";
-        //    user_name = TNameFind.Text;
-        //    user_town = TTownFind.Text;
-        //    user_tel = TTelFind.Text;
-        //    user_addr = TAddrFind.Text;
-        //    user_comment = TCommentFind.Text;
-        //    DataBaseNotice(table_name, user_name, user_town, user_tel, user_addr, user_comment, "user");
-        //    string strFileName;
-        //    string strFilePath;
-        //    string strFolder;
-        //    strFolder = "C:\\Users\\Elvina\\Desktop\\Курсач\\choosing_a_pet\\user_images\\ld";
-        //    // Retrieve the name of the file that is posted.
-        //    strFileName = user_name;
-        //    //strFileName = Path.GetFileName(strFileName);
-        //    if (ILostDog.Value != "")
-        //    {
-        //        try
-        //        {
-        //            strFilePath = strFolder + strFileName + ".jpg";
-        //            ILostDog.PostedFile.SaveAs(strFilePath);
-        //            ILostDog.PostedFile.SaveAs(strFilePath);
-        //        }
-        //        catch
-        //        {
-        //            LLostDogPhoto.Text = "Приносим свои извинения, произошла ошибка загрузки изображения.";
-        //        }
-        //    }
-        //}
-
-        //protected void ButtonAdopt_Click(object sender, EventArgs e)
-        //{
-        //    table_name = "temporary_pet_adopt";
-        //    user_name = TNameAdopt.Text;
-        //    user_town = TTownAdopt.Text;
-        //    user_tel = TTelAdopt.Text;
-        //    user_addr = TAddrAdopt.Text;
-        //    user_comment = TCommentAdopt.Text;
-        //    DataBaseNotice(table_name, user_name, user_town, user_tel, user_addr, user_comment, "user");
-        //}
-
-        //protected void ButtonNeedsAdopt_Click(object sender, EventArgs e)
-        //{
-        //    table_name = "needs_temp_pet_adopt";
-        //    user_name = TNameNeedsAdopt.Text;
-        //    user_town = TTownNeedsAdopt.Text;
-        //    user_tel = TTelNeedsAdopt.Text;
-        //    user_addr = TAddrNeedsAdopt.Text;
-        //    user_comment = TCommentNeedsAdopt.Text;
-        //    DataBaseNotice(table_name, user_name, user_town, user_tel, user_addr, user_comment, "user");
-        //    string strFileName;
-        //    string strFilePath;
-        //    string strFolder;
-        //    strFolder = "C:\\Users\\Elvina\\Desktop\\Курсач\\choosing_a_pet\\user_images\\na";
-        //    // Retrieve the name of the file that is posted.
-        //    strFileName = user_name;
-        //    //strFileName = Path.GetFileName(strFileName);
-        //    if (INeedsAdopt.Value != "")
-        //    {
-        //        try
-        //        {
-        //            strFilePath = strFolder + strFileName + ".jpg";
-        //            INeedsAdopt.PostedFile.SaveAs(strFilePath);
-        //            INeedsAdopt.PostedFile.SaveAs(strFilePath);
-        //        }
-        //        catch
-        //        {
-        //            LNeedsAdopt.Text = "Приносим свои извинения, произошла ошибка загрузки изображения.";
-        //        }
-        //    }
-        //}
+      
     }
 }

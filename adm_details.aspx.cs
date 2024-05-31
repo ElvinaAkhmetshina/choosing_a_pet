@@ -11,11 +11,8 @@ namespace choosing_a_pet
 {
     public partial class adm_details : System.Web.UI.Page
     {
-        public static string connection_string = @"Data Source=LAPTOP-NQ4AHNK7;Initial Catalog=choosing_a_pet;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public static string connection_string = @"Data Source=LAPTOP;Initial Catalog=choosing_a_pet;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-
-        //int id;
-        //int tel;
 
         private string GetIdFromName(int id, string tel)
         {
@@ -56,12 +53,7 @@ namespace choosing_a_pet
         protected void Page_Load(object sender, EventArgs e)
         {
            
-            //Uri myuri = Request.Url;
-
-            //LName.Text = myuri.ToString();
-            //string urs = myuri.ToString();
-            //var fragment = myuri.Fragment.TrimStart('?');    // access_token=123&expires_in=0&user_id=456
-            //var access_token = HttpUtility.ParseQueryString(urs).Get("id");
+           
             var id = Request.QueryString["id"];
             var tel = Request.QueryString["tel"];
             int int_id = int.Parse(id);
